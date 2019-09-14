@@ -1,0 +1,12 @@
+*
+!/.gitignore.d
+!/.gitignore.d/zsh
+!/.local
+!/.local/share
+!/.local/share/zsh
+!/.local/share/zsh/completions
+!/.local/share/zsh/completions/_vcsh
+!/.oh-my-zsh
+!/.oh-my-zsh/themes
+!/.oh-my-zsh/themes/devecoop.zsh-theme
+!/.zshrc
