@@ -274,3 +274,4 @@ right_prompt() {
 
 PROMPT='%{%f%b%k%}$(build_prompt) '
 RPROMPT='$(prompt_virtualenv)$(prompt_git)'
+
