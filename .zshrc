@@ -100,3 +100,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias kit="kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty"
+alias vimdiff="nvim -d"
