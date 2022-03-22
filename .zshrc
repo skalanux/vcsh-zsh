@@ -70,7 +70,7 @@ ZSH_THEME="devecoop"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git, fzf-zsh-plugin)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,3 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias kit="kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty"
 alias vimdiff="nvim -d"
+
+source /home/ska/.config/broot/launcher/bash/br
+eval "$(zoxide init zsh)"
