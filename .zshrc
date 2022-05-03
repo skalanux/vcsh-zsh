@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export QT_QPA_PLATFORMTHEME=qt5ct
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="devecoop"
-
+eval "$(oh-my-posh init zsh --config ~/ohmyphosh-tonybaloney.json)"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -70,7 +70,7 @@ ZSH_THEME="devecoop"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, fzf-zsh-plugin)
+plugins=(fzf-zsh-plugin)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,3 +104,5 @@ alias vimdiff="nvim -d"
 
 source /home/ska/.config/broot/launcher/bash/br
 eval "$(zoxide init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
