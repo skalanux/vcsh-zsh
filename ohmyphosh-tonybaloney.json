@@ -4,22 +4,10 @@
     {
       "alignment": "left",
       "segments": [
+    
         {
           "background": "#18354c",
           "foreground": "#ffc107",
-          "leading_diamond": "\ue0b6",
-          "properties": {
-            "style": "folder"
-          },
-          "style": "diamond",
-          "template": " \ue5ff {{ .Path }} ",
-          "trailing_diamond": "\ue0b0",
-          "type": "path"
-        },
-        {
-          "background": "#18354c",
-          "foreground": "#ffc107",
-          "powerline_symbol": "\ue0b0",
           "properties": {
             "fetch_stash_count": true,
             "fetch_upstream_icon": true
@@ -31,12 +19,50 @@
         {
           "background": "#ffc107",
           "foreground": "#18354c",
-          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "fetch_version": false
+          },
           "style": "powerline",
-          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "template": " \ue235{{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }} {{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "type": "python"
-        },
+        }
+      ],    
+      "type": "rprompt"
+    },
+    {
+      "alignment": "left",
+      "segments": [
         {
+          "background": "#18354c",
+          "foreground": "#ffffff",
+          "leading_diamond": "\ue0b6",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "diamond",
+          "template": " {{ .HostName }} ",
+          "type": "path"
+        }
+
+        ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#18354c",
+          "foreground": "#ffc107",
+          "leading_diamond": "▎",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "diamond",
+          "template": "\ue5ff {{ .Path }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "path"
+        },
+      {
           "background": "#ffc107",
           "foreground": "#18354c",
           "powerline_symbol": "\ue0b0",
@@ -47,6 +73,7 @@
       ],
       "type": "prompt"
     }
+
   ],
   "final_space": true,
   "version": 2
