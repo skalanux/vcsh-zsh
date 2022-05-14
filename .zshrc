@@ -107,3 +107,5 @@ source /home/ska/.config/broot/launcher/bash/br
 eval "$(zoxide init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source /usr/share/doc/mcfly/mcfly.zsh 
