@@ -33,7 +33,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#18354c",
+          "background": "#303030",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "properties": {
@@ -51,7 +51,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#18354c",
+          "background": "#303030",
           "foreground": "#ffc107",
           "leading_diamond": "▎",
           "properties": {
