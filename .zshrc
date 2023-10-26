@@ -70,11 +70,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(fzf-zsh-plugin)
+#plugins=(fzf-zsh-plugin)
 
-source $ZSH/oh-my-zsh.sh
 eval "$(oh-my-posh init zsh --config ~/ohmyphosh-tonybaloney.json)"
-
+source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -108,7 +107,9 @@ eval "$(zoxide init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+HISTFILE=${ZDOTDIR:-$HOME}/.zhistory
 source /usr/share/doc/mcfly/mcfly.zsh
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#export PATH="$HOME/.pyenv/bin:$PATH"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
+#
