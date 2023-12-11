@@ -113,3 +113,4 @@ source /usr/share/doc/mcfly/mcfly.zsh
 #eval "$(pyenv init -)"
 #eval "$(pyenv virtualenv-init -)"
 #
+source /usr/share/nvm/init-nvm.sh
