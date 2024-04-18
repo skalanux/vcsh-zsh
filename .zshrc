@@ -19,3 +19,5 @@ source /usr/share/doc/mcfly/mcfly.zsh
 export PATH=/opt/nvim-linux64/bin:$PATH
 source /usr/share/nvm/init-nvm.sh
 eval "$(starship init zsh)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
