@@ -12,12 +12,12 @@ eval "$(zoxide init zsh)"
 
 HISTFILE=${ZDOTDIR:-$HOME}/.zhistory
 source /usr/share/doc/mcfly/mcfly.zsh
-#export PATH="$HOME/.pyenv/bin:$PATH"
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
-#
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 export PATH=/opt/nvim-linux64/bin:$PATH
 source /usr/share/nvm/init-nvm.sh
 eval "$(starship init zsh)"
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
