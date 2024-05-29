@@ -6,9 +6,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 #export QT_QPA_PLATFORMTHEME=qt5ct
-export ZSH="$HOME/.oh-my-zsh"
+#export ZSH="$HOME/.oh-my-zsh"
 #eval "$(oh-my-posh init zsh --config ~/ohmyphosh-tonybaloney.json)"
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 alias kit="kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty"
 alias vimdiff="nvim -d"
 alias venv="source env/bin/activate"
