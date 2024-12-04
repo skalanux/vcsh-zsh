@@ -86,3 +86,5 @@ setopt share_history          # share command history data
 # Corrección para teclas Home y End en Zsh
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
+
+. "$HOME/.cargo/env"
